@@ -1,10 +1,7 @@
-
 from django.db import models
 from django.contrib.auth.models import User
 from api.base_model import BaseModel
 from api.models.vendor_models import Vendor
-
-
 
 class ProductCategory(BaseModel):
     title=models.CharField(max_length=250)
