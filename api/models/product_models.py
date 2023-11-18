@@ -17,6 +17,7 @@ class Product(BaseModel):
     price=models.FloatField(default=0.0)
     product_category=models.ForeignKey(ProductCategory,on_delete=models.SET_NULL,null=True)
     vendor=models.ForeignKey(Vendor,on_delete=models.SET_NULL,null=True)
+    product_image=models.ImageField(upload_to="images")
 
     def __str__(self):
         return self.title

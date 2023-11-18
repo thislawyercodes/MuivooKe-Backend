@@ -6,7 +6,7 @@ from .product_reviews_serializers import ProductReviewSerializer
 class ProductListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields=["__all__"]
+        fields="__all__"
 
     def __init__(self, *args, **kwargs):
         super(ProductListSerializer, self).__init__(*args,**kwargs)

@@ -4,7 +4,6 @@ from api.models.review_models import ProductReviews
 from api.serializers.product_reviews_serializers import ProductReviewSerializer
 
 class ProductReviewListApiView(generics.ListCreateAPIView):
-    permission_classes=[permissions.IsAuthenticated]
     queryset = ProductReviews.objects.all()
     serializer_class=ProductReviewSerializer
 
